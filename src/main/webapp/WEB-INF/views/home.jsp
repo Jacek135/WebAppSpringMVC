@@ -13,12 +13,14 @@ Request (using EL): ${name} <p/>
 <c:out value="${name}"></c:out>
 
 <sql:query var="rs" dataSource="jdbc/spring">
-    select id, name, emial, text from offers
+    select id, name, email, text from offers
 </sql:query>
     <br/>
-<c:forEach var="row" items="${rs.rows}">
+<c:forEach var="row" items="${offers}">
     ID ${row.id}<br/>
     Name: ${row.name}<br/>
+    Email: ${row.email}<br/>
+    Text: ${row.text}<br/>
 </c:forEach>
 
 </body>
