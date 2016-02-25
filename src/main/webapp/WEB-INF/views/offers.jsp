@@ -1,16 +1,19 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 2/25/2016
-  Time: 6:57 AM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=US-ASCII"
+         pageEncoding="US-ASCII"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
     <title>Title</title>
 </head>
 <body>
+<h2>Hello you little buster</h2>
+<br/>
+<c:forEach var="offer" items="${offers}">
+   <p> <c:out value="${offer}"></c:out> </p>
 
+</c:forEach>
 </body>
 </html>

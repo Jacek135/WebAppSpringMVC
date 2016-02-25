@@ -6,32 +6,26 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
-import javax.servlet.http.HttpSession;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
 import java.util.List;
-import java.util.Map;
 
 @Controller
 public class IndexController {
 
-    /*public String showHome(HttpSession session){
-        session.setAttribute("name", "Boris");
-        return "home";
-    }*/
-    /*public ModelAndView index() {
-        ModelAndView mv = new ModelAndView("home");
-
-        Map<String, Object> model = mv.getModel();
-        model.put("name", "River");
-
-        return mv;
-    }*/
-
-    private OffersService offersService;
+   private OffersService offersService;
 
     @Autowired
     public void setOffersService(OffersService offersService) {
         this.offersService = offersService;
+    }
+
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    public String showTest(Model model, @RequestParam("id") String id){
+        System.out.println("Id is: " + id);
+
+        return "createoffer";
     }
 
     @RequestMapping(value = "/offers")
