@@ -20,15 +20,9 @@ import org.springframework.transaction.annotation.Transactional;
 public class OffersDAO {
 
 	private NamedParameterJdbcTemplate jdbc;
-
-	public OffersDAO()
-	{
-		System.out.println("Successfully loaded offers DAO");
-	}
-
+	
 	@Autowired
 	public void setDataSource(DataSource jdbc) {
-
 		this.jdbc = new NamedParameterJdbcTemplate(jdbc);
 	}
 
