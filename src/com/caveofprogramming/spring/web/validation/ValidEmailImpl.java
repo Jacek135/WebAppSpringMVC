@@ -23,8 +23,6 @@ public class ValidEmailImpl implements ConstraintValidator<ValidEmail, String> {
         if(!EmailValidator.getInstance(false).isValid(email)) {
             return false;
         }
-
         return true;
     }
-
 }
