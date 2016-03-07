@@ -30,10 +30,10 @@
           <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.9.2" />
           <element id="library" level="project" name="Maven: commons-digester:commons-digester:1.8.1" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.2" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:4.0.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:3.1.4.RELEASE" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:4.0.4.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:4.0.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:3.1.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:3.1.4.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">
