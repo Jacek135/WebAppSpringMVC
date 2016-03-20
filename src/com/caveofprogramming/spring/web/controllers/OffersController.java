@@ -34,17 +34,8 @@ public class OffersController {
 		return "home";
 	}
 
-/*
-	@ExceptionHandler(DataAccessException.class)
-	public String handleDatabaseException(DataAccessException ex){
-		return "error";
-	}
-*/
-
 	@RequestMapping("/offers")
 	public String showOffers(Model model) {
-
-//		offersService.throwTestException();
 
 		List<Offer> offers = offersService.getCurrent();
 		
