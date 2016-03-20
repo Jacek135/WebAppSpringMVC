@@ -6,7 +6,7 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <security:authentication-manager>
+    <security:authentication-manager >
         <security:authentication-provider>
             <security:user-service>
                 <security:user name="John" authorities="admin"
@@ -25,6 +25,9 @@
         <security:intercept-url pattern="/docreate" access="isAuthenticated()" />
         <security:intercept-url pattern="/offercreated" access="isAuthenticated()" />
         <security:intercept-url pattern="/" access="permitAll" />
+        <security:intercept-url pattern="/newaccount" access="permitAll" />
+        <security:intercept-url pattern="/createaccount" access="permitAll" />
+        <security:intercept-url pattern="/accountcreated" access="permitAll" />
         <security:intercept-url pattern="/static/**" access="permitAll" />
         <security:intercept-url pattern="/login" access="permitAll" />
         <security:intercept-url pattern="/offers" access="permitAll" />
